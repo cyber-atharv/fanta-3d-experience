@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useUI } from "@/context/UIContext";
 import type { FlavorConfig } from "@/lib/flavors";
+import { assetUrl } from "@/lib/asset";
 
 const SIZES = [
   { label: "250 ml", price: 1.49 },
@@ -83,7 +84,7 @@ export default function FlavorDetailModal({ flavor, onClose }: Props) {
                 }}
               />
               <Image
-                src={`/can-frames/${flavor.frameFolder}/frame_${String(FRONT_FRAME[flavor.frameFolder] ?? 0).padStart(3, "0")}.webp`}
+                src={assetUrl(`/can-frames/${flavor.frameFolder}/frame_${String(FRONT_FRAME[flavor.frameFolder] ?? 0).padStart(3, "0")}.webp`)}
                 alt={flavor.name}
                 fill
                 sizes="480px"

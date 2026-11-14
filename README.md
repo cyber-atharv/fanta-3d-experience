@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍊 Fanta 3D Experience — Interactive Product Showcase
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-FF6600?style=for-the-badge&logo=github)](https://cyber-atharv.github.io/fanta-3d-experience/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-WebGL-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-FF0055?style=for-the-badge&logo=framer)](https://framer.com/motion)
 
-First, run the development server:
+An interactive, high-energy 3D product showcase and flavor explorer for **Fanta Guaraná Zero**. Features interactive 3D can rotation driven by mouse physics and scroll triggers, full dynamic flavor color themes (Guaraná, Blue Citrus, Strawberry, Grape, Tutti Frutti), particle effects, and an interactive shopping cart.
+
+---
+
+## 🌐 Live Website
+
+Experience the interactive showcase:
+👉 **[https://cyber-atharv.github.io/fanta-3d-experience/](https://cyber-atharv.github.io/fanta-3d-experience/)**
+
+---
+
+## ⚡ Highlights & Features
+
+- 🥫 **360° Interactive Can Physics**: Mouse tracking tilt, momentum physics, and scroll-linked 41-frame high-resolution can rotations.
+- 🎨 **Dynamic Theme Engine**: Smooth CSS & WebGL atmospheric transitions across 5 signature flavor profiles.
+- ✨ **Floating Ambient Particles**: Real-time canvas particle simulation themed to match active flavor colors.
+- 🛒 **Interactive Flavor Cart & Details**: Modal dialogs displaying size variants (250ml, 330ml, 500ml), nutrition stats, and cart order management.
+- 🚀 **Next-Gen Performance**: Built on Next.js 16 App Router, React 19, and optimized for GitHub Pages static hosting.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router, Static Export)
+- **3D & Canvas**: Three.js, React Three Fiber, Framer Motion, GSAP 3
+- **Styling**: Tailwind CSS
+- **Deployment**: GitHub Pages
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository and run locally:
 
 ```bash
+git clone https://github.com/cyber-atharv/fanta-3d-experience.git
+cd fanta-3d-experience
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👤 Author & Contact
 
-## Learn More
+**Atharv Hogade**
+- **GitHub**: [@cyber-atharv](https://github.com/cyber-atharv)
+- **Email**: [atharvhogade12@gmail.com](mailto:atharvhogade12@gmail.com)
+- **Showcase Repository**: [fanta-3d-experience](https://github.com/cyber-atharv/fanta-3d-experience)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the MIT License.

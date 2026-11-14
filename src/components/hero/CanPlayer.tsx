@@ -3,10 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform, type MotionValue } from "framer-motion";
+import { assetUrl } from "@/lib/asset";
 
 const FRAME_COUNT = 41;
 const FRAME_PATH = (folder: string, i: number) =>
-  `/can-frames/${folder}/frame_${String(i).padStart(3, "0")}.webp`;
+  assetUrl(`/can-frames/${folder}/frame_${String(i).padStart(3, "0")}.webp`);
 const FRAME_DURATION_MS = 70;
 
 interface CanPlayerProps {

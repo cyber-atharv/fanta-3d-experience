@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { FLAVORS, type FlavorConfig } from "@/lib/flavors";
 import { useUI } from "@/context/UIContext";
 import FlavorDetailModal from "@/components/ui/FlavorDetailModal";
+import { assetUrl } from "@/lib/asset";
 
 const SIZES = ["250 ml", "330 ml", "500 ml"];
 
@@ -88,7 +89,7 @@ export default function FlavorsSection() {
                   aria-label={`Explore ${flavor.name}`}
                 >
                   <Image
-                    src={`/can-frames/${flavor.frameFolder}/frame_${String(FRONT_FRAME[flavor.frameFolder] ?? 0).padStart(3, "0")}.webp`}
+                    src={assetUrl(`/can-frames/${flavor.frameFolder}/frame_${String(FRONT_FRAME[flavor.frameFolder] ?? 0).padStart(3, "0")}.webp`)}
                     alt={flavor.name}
                     fill
                     sizes="(max-width: 640px) 50vw, 20vw"

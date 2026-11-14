@@ -1,7 +1,14 @@
 {
-  "name": "fanta-guarana-zero-hero",
-  "version": "0.1.0",
+  "name": "fanta-3d-experience",
+  "version": "1.0.0",
   "private": true,
+  "description": "Fanta Zero - Interactive 3D Can Experience & Color Visualizer by Atharv Hogade.",
+  "author": "Atharv Hogade <atharvhogade12@gmail.com>",
+  "homepage": "https://cyber-atharv.github.io/fanta-3d-experience/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyber-atharv/fanta-3d-experience.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

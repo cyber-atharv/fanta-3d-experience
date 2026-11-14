@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useUI } from "@/context/UIContext";
+import { assetUrl } from "@/lib/asset";
 
 const FRONT_FRAME: Record<string, number> = { green: 22, blue: 0, red: 5, purple: 0, mixed: 0 };
 
@@ -64,7 +65,7 @@ export default function CartModal() {
                 <div className="flex flex-col gap-4">
                   {cartItems.map((item) => {
                     const frameNum = FRONT_FRAME[item.flavorId] ?? 0;
-                    const frameSrc = `/can-frames/${item.flavorId}/frame_${String(frameNum).padStart(3, "0")}.webp`;
+                    const frameSrc = assetUrl(`/can-frames/${item.flavorId}/frame_${String(frameNum).padStart(3, "0")}.webp`);
                     return (
                       <div key={item.id} className="flex items-center gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4">
                         <div className="relative h-16 w-12 shrink-0">

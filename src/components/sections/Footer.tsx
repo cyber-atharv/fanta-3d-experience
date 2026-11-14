@@ -85,15 +85,34 @@ export default function Footer() {
 
         {/* ── bottom legal row ── */}
         <div className="flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} Fanta Guaraná Zero Sugar. All rights reserved.
+          <p className="text-xs text-white/50">
+            © {new Date().getFullYear()} Fanta Experience · Curated &amp; Developed by{" "}
+            <a
+              href="https://github.com/cyber-atharv"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#B7E11D] hover:underline"
+            >
+              Atharv Hogade
+            </a>{" "}
+            · Contact:{" "}
+            <a href="mailto:atharvhogade12@gmail.com" className="text-white/70 hover:underline">
+              atharvhogade12@gmail.com
+            </a>
           </p>
           <div className="flex flex-wrap gap-4">
-            {["Privacy Policy", "Terms of Use", "Cookie Settings"].map((l) => (
-              <a key={l} href="#" className="text-xs text-white/30 transition-colors hover:text-white/60">
-                {l}
-              </a>
-            ))}
+            <a
+              href="https://cyber-atharv.github.io/fanta-3d-experience/"
+              className="text-xs text-[#B7E11D] hover:underline"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/cyber-atharv/fanta-3d-experience"
+              className="text-xs text-white/50 hover:text-white"
+            >
+              GitHub
+            </a>
           </div>
         </div>
 
